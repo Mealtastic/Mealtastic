@@ -1,0 +1,159 @@
+nav {
+  background-color: white;
+  box-shadow: var(--shadow);
+  height: 5rem;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+.menu-icon {
+  width: 35px;
+  height: 25px;
+  transform: translateY(-50%);
+  margin: 2.5rem 1rem;
+  cursor: pointer;
+}
+
+.menu-icon div {
+  position: absolute;
+  left: 0;
+  height: 4px;
+  width: 35px;
+  background-color: var(--blue);
+  border-radius: 5px;
+  transition: 0.3s ease-in-out;
+}
+
+.menu-icon div:nth-child(1) {top: 0;}
+
+.menu-icon div:nth-child(2) {top: 11px;}
+
+.menu-icon div:nth-child(3) {top: 22px;}
+
+.menu-icon-transform div:nth-child(1) {
+  transform: rotate(45deg);
+  top: 50%;
+}
+
+.menu-icon-transform div:nth-child(2) {opacity: 0;}
+
+.menu-icon-transform div:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 50%;
+}
+
+.nav-items {
+  top: 5rem;
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  background-color: white;
+  border-top: 1px solid rgb(230,230,230);
+  transition: 0.3s ease-in-out;
+  box-shadow:
+}
+
+.show-nav-items {
+  opacity: 1;
+  visibility: visible;
+}
+
+.nav-items a {
+  color: var(--dark-gray);
+  font-size: 1.1rem;
+  font-weight: 400;
+  text-align: center;
+  display: block;
+  padding: 0;
+  border-bottom: 1px solid rgb(230,230,230);
+  transition: 0.3s ease-in-out;
+}
+
+.show-nav-items a {
+  padding: 2rem;
+}
+
+.download-button.only-mobile {
+  font-size: 3rem;
+  text-align: center;
+  color: var(--green);
+  position: absolute;
+  transform: translateY(-50%);
+  margin: 2.5rem 1rem;
+  right: 0;
+  top: 0;
+}
+
+nav h3 {
+  font-size: 1.6rem;
+  color: var(--blue);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+}
+
+
+
+@media (min-width: 768px) {
+
+  .nav-items {
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    height: 5rem;
+    display: flex;
+    justify-content: space-evenly;
+    top: 0;
+    visibility: visible;
+    opacity: 1;
+    border: none;
+    cursor: pointer;
+  }
+
+  .nav-items a:hover {
+    background-color: rgb(245,245,245);
+  }
+
+  .nav-items a {
+    display: inline-block;
+    border: none;
+    font-size: 1.2rem;
+    padding: 1.9rem 0;
+    width: 8rem;
+    color: var(--dark-gray);
+  }
+
+  nav h3 {
+    left: 2rem;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+
+  .download-button.only-pc {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    right: 2rem;
+  }
+
+}
+
+
+@media (min-width: 1024px) {
+
+  .nav-items a {
+    width: 10rem;
+  }
+
+  nav h3 {
+    left: calc(50% - 30rem);
+  }
+
+  .download-button.only-pc {
+    right: calc(50% - 30rem);
+  }
+
+}

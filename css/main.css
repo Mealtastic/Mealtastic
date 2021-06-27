@@ -1,3 +1,93 @@
+:root {
+  --blue: #05386B;
+  --dark-gray: rgb(70,70,70);
+  --gray: rgb(160,160,160);
+  --shadow: 0 0 10px rgba(100,100,100,.2);
+  --green: #32CD32;
+}
+
+/*-------*/
+
 body {
   box-sizing: border-box;
+}
+
+.content {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 100%;
+}
+
+.some-text {
+  height: 100vh;
+}
+
+/*--------*/
+
+h1, h2, h3, h4, h5, h6, p, button, a {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  transition: 0.3s background;
+}
+
+button:focus {
+  outline: none;
+}
+
+.rounded-button {
+  font-size: .9rem;
+  padding: .7rem;
+  border-radius: 5rem;
+  font-weight: 500;
+}
+
+.rounded-button.button-green {
+  border: 2px solid var(--green);
+  color: var(--green);
+}
+
+.rounded-button.button-blue {
+  border: 2px solid var(--blue);
+  color: var(--blue);
+}
+
+.only-pc {display: none;}
+
+/*ICON SIZES*/
+.md-35 {font-size: 35px !important;}
+
+
+@media (min-width: 768px) {
+
+  .rounded-button {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+
+  .only-mobile {display: none;}
+
+  .only-pc {display: block;}
+
+  .rounded-button.button-green:hover {
+    background-color: var(--green);
+    color: white;
+  }
+
+  .rounded-button.button-blue:hover {
+    background-color: var(--blue);
+    color: white;
+  }
+
 }
