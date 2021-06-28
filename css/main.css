@@ -12,14 +12,6 @@ body {
   box-sizing: border-box;
 }
 
-.content {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
-  height: 100%;
-}
-
 .some-text {
   height: 100vh;
 }
@@ -63,7 +55,15 @@ button:focus {
   color: var(--blue);
 }
 
+.shadow {
+  box-shadow: var(--shadow);
+}
+
+.only-tablet {display: none}
+
 .only-pc {display: none;}
+
+.tablet-and-pc {display: none;}
 
 /*ICON SIZES*/
 .md-35 {font-size: 35px !important;}
@@ -78,7 +78,9 @@ button:focus {
 
   .only-mobile {display: none;}
 
-  .only-pc {display: block;}
+  .only-tablet {display: block}
+
+  .tablet-and-pc {display: block;}
 
   .rounded-button.button-green:hover {
     background-color: var(--green);
@@ -89,5 +91,19 @@ button:focus {
     background-color: var(--blue);
     color: white;
   }
+
+}
+
+
+@media (min-width: 1024px) {
+
+
+  .only-tablet {display: none}
+
+  .only-pc {display: block;}
+
+  .mobile-and-tablet {display: none;}
+
+
 
 }
