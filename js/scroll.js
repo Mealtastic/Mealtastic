@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-  //alert('Version: 18:28')
+  alert('Version: 18:52')
 
   $(window).scroll(function(event){
     var st = $(this).scrollTop();
@@ -17,7 +17,7 @@ $(document).ready(function() {
       $("header img").css("position", "fixed")
       $("nav").removeClass("shadow")
     }
-    $("header img").css("height", scale + "vh")
+    $("header img").css("height", scale + "%")
     $(".header-title").css("opacity", opacity)
   });
 
