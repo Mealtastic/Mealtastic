@@ -9,7 +9,7 @@ header {
   text-align: center;
   position: fixed;
   width: 80%;
-  top: 22%;
+  bottom: 67%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -29,9 +29,9 @@ header {
 
 header img {
   position: fixed;
-  top: 100%;
+  bottom: -2rem;
   height: 70vh;
-  transform: translate(-50%, calc(-100% + 2rem));
+  transform: translateX(-50%);
   left: 50%;
 }
 

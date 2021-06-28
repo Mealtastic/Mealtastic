@@ -29,7 +29,6 @@ a {
 
 button {
   border: none;
-  background-color: white;
   cursor: pointer;
   transition: 0.3s background;
 }
@@ -40,6 +39,7 @@ button:focus {
 
 .rounded-button {
   font-size: .9rem;
+  background-color: white;
   padding: .7rem;
   border-radius: 5rem;
   font-weight: 500;
