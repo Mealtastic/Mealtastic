@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-  //alert('Version: 19:24')
+  alert('Version: 19:38')
 
   $(window).scroll(function(event){
     var st = $(this).scrollTop();
