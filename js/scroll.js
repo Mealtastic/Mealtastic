@@ -1,15 +1,13 @@
 $(document).ready(function() {
 
-  alert('Version: 19:43')
-
   $(window).scroll(function(event){
     var st = $(this).scrollTop();
-    var scale = 70
+    var scale = 65
     var opacity = 1
     scale += st / 40
     opacity -= st / 300
     if (st > 600) {
-      scale = 85
+      scale = 80
       opacity = 0
       $("header img").css("position", "absolute")
       $("nav").addClass("shadow")
