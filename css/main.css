@@ -6,6 +6,10 @@
   --green: #32CD32;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   box-sizing: border-box;
 }
