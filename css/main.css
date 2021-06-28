@@ -12,16 +12,6 @@ body {
   box-sizing: border-box;
 }
 
-body {
-  min-height: 100vh;
-  box-sizing: border-box;
-  min-height: -webkit-fill-available;
-}
-
-html {
-  height: -webkit-fill-available;
-}
-
 .some-text {
   height: 100vh;
 }
