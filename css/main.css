@@ -6,12 +6,14 @@
   --green: #32CD32;
 }
 
-html {
-  height: 100%;
+body {
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+  box-sizing: border-box;
 }
 
-body {
-  box-sizing: border-box;
+html {
+  height: -webkit-fill-available;
 }
 
 .some-text {

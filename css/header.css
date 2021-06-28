@@ -30,7 +30,7 @@ header {
 header img {
   position: fixed;
   bottom: -2rem;
-  height: 70vh;
+  height: calc((var(--real-vh) * 70) - var(--header-height, 45px));
   transform: translateX(-50%);
   left: 50%;
 }
