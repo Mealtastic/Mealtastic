@@ -6,8 +6,6 @@
   --green: #32CD32;
 }
 
-/*-------*/
-
 body {
   box-sizing: border-box;
 }
@@ -16,7 +14,9 @@ body {
   height: 100vh;
 }
 
-/*--------*/
+@-ms-viewport{
+  width: device-width;
+}
 
 h1, h2, h3, h4, h5, h6, p, button, a {
   font-family: 'Ubuntu', sans-serif;
@@ -28,6 +28,7 @@ a {
 }
 
 button {
+  background-color: rgba(0,0,0,.0);
   border: none;
   cursor: pointer;
   transition: 0.3s background;

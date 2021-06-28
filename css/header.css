@@ -9,7 +9,7 @@ header {
   text-align: center;
   position: fixed;
   width: 80%;
-  bottom: 67%;
+  top: 22%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
