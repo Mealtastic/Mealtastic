@@ -2,20 +2,15 @@
   --blue: #05386B;
   --dark-gray: rgb(70,70,70);
   --gray: rgb(160,160,160);
+  --light-gray: rgb(220,220,220);
   --shadow: 0 0 10px rgba(100,100,100,.2);
   --green: #32CD32;
+  --transparent: rgba(0,0,0,.0);
 }
 
 body {
   min-height: 100vh;
-}
-
-.some-text {
-  height: 100vh;
-}
-
-@-ms-viewport{
-  width: device-width;
+  box-sizing: border-box;
 }
 
 h1, h2, h3, h4, h5, h6, p, button, a {
@@ -39,9 +34,9 @@ button:focus {
 }
 
 .rounded-button {
-  font-size: .9rem;
   background-color: white;
-  padding: .7rem;
+  font-size: 1rem;
+  padding: 1rem;
   border-radius: 5rem;
   font-weight: 500;
 }
@@ -51,9 +46,21 @@ button:focus {
   color: var(--green);
 }
 
+.rounded-button.button-green-filled {
+  border: 2px solid var(--green);
+  color: white;
+  background-color: var(--green);
+}
+
 .rounded-button.button-blue {
   border: 2px solid var(--blue);
   color: var(--blue);
+}
+
+.rounded-button.button-blue-filled {
+  border: 2px solid var(--blue);
+  color: white;
+  background-color: var(--blue);
 }
 
 .shadow {
@@ -72,11 +79,6 @@ button:focus {
 
 @media (min-width: 768px) {
 
-  .rounded-button {
-    font-size: 1rem;
-    padding: 1rem;
-  }
-
   .only-mobile {display: none;}
 
   .only-tablet {display: block}
@@ -88,9 +90,19 @@ button:focus {
     color: white;
   }
 
+  .rounded-button.button-green-filled:hover {
+    background-color: white;
+    color: var(--green);
+  }
+
   .rounded-button.button-blue:hover {
     background-color: var(--blue);
     color: white;
+  }
+
+  .rounded-button.button-blue-filled:hover {
+    background-color: white;
+    color: var(--blue);
   }
 
 }
